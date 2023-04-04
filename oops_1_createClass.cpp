@@ -4,39 +4,40 @@
 */
   
 #include<iostream>
+#include<string.h>
 using namespace std;
 
 class employee
 {
-    private:
-     int a,b,c;
      public:
      int d,e;
-     void set_data(int a1,int b1,int c1); // Declaration
-
+     char s[5];
+     string r;
+     void display(); // Declaration
+      
     void get_data(){
-        cout<<"the value of a is "<<a<<endl;
-         cout<<"the value of b is "<<b<<endl;
-          cout<<"the value of c is "<<c<<endl;
-           cout<<"the value of d is "<<d<<endl;
-            cout<<"the value of e is "<<e<<endl;
+       cout<<"enter the value of d--> ";
+       cin>>d;
+       cout<<"enter the value of e--> ";
+       cin>>e;
      }
 };
 
-void employee :: set_data(int a1,int b1,int c1){
-    a=a1;
-    b=b1;
-    c=c1;
+void employee :: display(){
+    cout<<"the value of d is --> "<<d;
+    cout<<"the value of e is --> "<<e;
+
+    cout<<"the value of string s is --> "<<r;
 }
 
 int main(){
        
        employee manish;
-       manish.d=34;
-       manish.e=5;
+      //  manish.s= "abcd";
+       manish.r="abcd";
      //manish.a=345; it can not access because a is a privarte varable in class-employee , only class's functions access the variables.
-       manish.set_data(1,3,2);
        manish.get_data();
+       manish.display();
     return 0;
 
 }
