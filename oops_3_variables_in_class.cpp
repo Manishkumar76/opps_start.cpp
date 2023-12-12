@@ -4,8 +4,6 @@ class variables
 {
 
     // private use to make private variable in class i.s only class can access the variables
-     
-  
 
 private:
     int a;
@@ -18,7 +16,7 @@ public:
     void displayb();
     void new_data()
     {
-        cout << "new data--> " << a*x<< endl;
+        cout << "new data--> " << a * x << endl;
     }
 };
 void variables ::get_data()

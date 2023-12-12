@@ -49,4 +49,3 @@ int main()
     b.chk_bin();
     return 0;
 }
-  
